@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/78327c7653.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://github.com/barath7x/barath7x.github.io/blob/main/image/BarathText.jpg?raw=true" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fresher</p>
+                <h1>Hi, I'm <span>Barath</span>  <br> Raj from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------About------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://github.com/barath7x/barath7x.github.io/blob/main/image/Barath%20(2).jpg?raw=true" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title ">About Me</h1>
+                    <p>Enthusiastic and detail-oriented software developer with a strong foundation
+                        in computer science fundamentals. Fresher with a passion for web development,
+                        skilled in HTML, CSS, and JavaScript.Proficient in designing and developing 
+                        responsive web application.        
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>web app development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Internship at FalconX Solutions</li>
+                            <li><span>Workshop</span><br>Machine Learning workshop</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>BTech(IT) from VSB College of Engineering Technical Campus, Coimbatore</li>
+                            <li><span>2020-2021</span><br>HSE-II from Devanga Higher Secondary School, Coimbatore</li>
+                            <li><span>2018-2019</span><br>SSLC from Devanga Higher Secondary School, Coimbatore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-----------------portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://github.com/barath7x/barath7x.github.io/blob/main/image/port.png?raw=true" alt="">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>lksd;ofhsd;lkfjsl;dkfjl;sdkjflsdkjf;llskdjfoiewlknsdfl</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://github.com/barath7x/barath7x.github.io/blob/main/image/ecom.png?raw=true" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>lksd;ofhsd;lkfjsl;dkfjl;sdkjflsdkjf;llskdjfoiewlknsdfl</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://github.com/barath7x/barath7x.github.io/blob/main/image/chat.png?raw=true" alt="">
+                    <div class="layer">
+                        <h3>AI Chat-Bot</h3>
+                        <p>lksd;ofhsd;lkfjsl;dkfjl;sdkjflsdkjf;llskdjfoiewlknsdfl</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9751117812</p>
+                    <div class="social-icons">
+                        <a href="https:"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="image/resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Barath Raj <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+    <script src="Portfolio.js"></script>
+</body>
+</html>
